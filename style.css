@@ -1,0 +1,116 @@
+
+/* utility start */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif; */
+    background-color: #f8f5e7;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    min-height: 900px;
+}
+
+.flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+} 
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+
+}
+
+#join_waislist_button {
+
+}
+
+
+.hero{
+    min-height: 500px;
+    width:50%;
+
+}
+/* utility end */
+
+/* header start */
+header {
+    background-color: red;
+    min-height: 100px;
+    padding: 20px;
+}
+
+.logo {
+    background-color: hotpink;
+    min-height: 40px;
+    padding: 20px;  
+
+}
+.company_links {
+    background-color: hotpink;
+    padding: 20px;  
+}
+
+.sign_in{
+    background-color: hotpink;
+    padding:10px;
+    padding: 20px;  
+}
+/* header end */
+
+
+/* main start */
+
+main {
+    background-color: purple;
+    min-height: 800px;
+    padding: 20px;
+}
+
+
+.hero_left {
+    background-color: green;
+    padding: 20px;
+
+
+}
+
+.hero_right {
+    background-color: rgb(87, 10, 48);
+    padding:60px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero_img {
+    width: 400px;
+    height:400px;
+}
+
+/* main end */
+
+/* footer start */
+footer {
+    background-color: yellow;
+    min-height: 100px;
+    padding: 0px 70px;
+}
+
+.social_media {
+    padding: 20px;
+}
+
+help {
+    padding: 20px;
+}
+/* footer end */
