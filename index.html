@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Hosterr Mock</title>
+    <link rel="stylesheet" href="./script.js">
+    <title>Hosterr Clone</title>
 </head>
 
 <body>
     <div class="container">
+        <!-- HEADER START -->
         <header class="flexed">
             <div class="logo flexed">
                 <img src="./Assets/Logo.svg" alt="Hosterr Logo">
-                <button><a href="#">Hosterr is hiring!</a></button>
-
+                <button id="hiring_link" onclick="hiringNow()">Hosterr is hiring!</button>
             </div>
-            <div class="company_links">
+            <div class="company_links flexed">
                 <ul class="flexed">
                     <li><a href="#">Plans</a></li>
                     <li><a href="#">Find Domain</a></li>
@@ -26,38 +27,42 @@
             </div>
             <div class="sign_in flexed">
                 <p>Sign in</p>
-                <button id="join_waislist_button">Join Waitlist</button>
+                <button class="join_waitlist_button" onclick="joinList()">Join Waitlist</button>
             </div>
         </header>
+        <!-- MAIN START -->
         <main class="flexed">
             <div class="hero_left hero">
-                <h1>Host your website in less than 5 minutes</h1>
-                <p>With Hosterr, get your website up and running in no less than 5 minutes withe the most competitive
+                <h1>Host your website in less than 5 minutes.</h1>
+                <p>With Hosterr, get your website up and running in no less than 5 minutes with the most competitive
                     pricing packages available online.</p>
                 <div class="enter_email">
-                    <label for="join_waislist_button"></label>
-                    <button id="join_waislist_button"></button>
+                    <input  id="email" type="email" placeholder="Enter e-mail address">
+                    <button class="join_waitlist_button" onclick="joinList()">Join Waitlist</button>
                 </div>
-                <div class="unsubscribe">
+                <div class="unsubscribe flexed">
                     <img src="./Assets/Checkmark.svg" alt="green checkmark in circle">
-                    <div class="unsubsribe_link">No spam, ever. <span>Unsubscribe</span> anytime.</div>
+                    <div class="unsubsribe_link">No spam, ever.
+                        <a href="#" id="unsubsribe" onclick="unsubscribeLink()">Unsubscribe</a> anytime.
+                    </div>
                 </div>
             </div>
             <div class="hero_right hero flexed">
                 <img class="hero_img" src="./Assets/Hero-Image-(Model).png" alt="Serious model">
-                <img src="./" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img class="pink_img" src="./Assets/Pink-Shape.svg" alt="pink shape">
+                <img class="purple_img" src="./Assets/Purple-Shape.svg" alt="purple shape">
+                <img class="blue_img" src="./Assets/Blue-Shape.svg" alt="blue shape">
             </div>
         </main>
+        <!--FOOTER START  -->
         <footer class="flexed">
             <div class="social_media flexed">
                 <ul class="flexed">
-                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://www.facebook.com/Hosterr.WebHosting/">Facebook</a></li>
                     <li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.instagram.com/hosterofficial/?hl=en">Instagram</a></li>
                     <li>
-                    <li><a href="#">Twitter</a></li>
+                    <li><a href="https://twitter.com/hosterr_hosting">Twitter</a></li>
                 </ul>
             </div>
             <div class="help flexed">
@@ -67,8 +72,9 @@
                     <a href="#">Talk to a specialist</a>
                 </div>
             </div>
-        </div>
-    </div>
+        </footer>
+    </div>   
+    <script src="script.js"></script>
 </body>
 
 </html>

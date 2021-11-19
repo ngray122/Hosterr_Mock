@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+
 
 /* utility start */
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Lato', sans-serif;
-    font-family: 'Playfair Display', serif; */
-    background-color: #f8f5e7;
+    background-color: rgb(248,244,233);
     box-sizing: border-box;
-}
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    font-weight: 300;
+} 
 
 .container {
     margin: 0 auto;
     width: 80%;
-    min-height: 900px;
+    min-height: 100%;
 }
 
 .flexed {
@@ -24,84 +30,144 @@
 
 a {
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: rgb(43, 39, 39);
 }
 
 ul {
     list-style: none;
+}
+
+.join_waitlist_button {
+    color: white;
+    background-color: #4976eb;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
 
 }
 
-#join_waislist_button {
-
+h1 {
+    font-family: 'Playfair Display', serif;
 }
-
 
 .hero{
     min-height: 500px;
     width:50%;
-
 }
+
+li {
+    margin: 20px;
+}
+
 /* utility end */
 
 /* header start */
 header {
-    background-color: red;
-    min-height: 100px;
+    min-height: 30px;
     padding: 20px;
 }
 
-.logo {
-    background-color: hotpink;
-    min-height: 40px;
-    padding: 20px;  
-
-}
-.company_links {
-    background-color: hotpink;
-    padding: 20px;  
+#hiring_link{
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
 }
 
-.sign_in{
-    background-color: hotpink;
-    padding:10px;
-    padding: 20px;  
+.logo img {
+    width: 175px;
+    height: 175px;
+
 }
+
+.logo > button {
+    background-color: #f6aa56;
+    background-image: linear-gradient(to right, #eb9c50, #eb9c50, #f34e71);
+    padding: 5px 10px;
+    border-radius:25px;
+    border: none;
+
+}
+
 /* header end */
 
 
 /* main start */
 
 main {
-    background-color: purple;
-    min-height: 800px;
-    padding: 20px;
+    min-height: 700px;
 }
-
 
 .hero_left {
-    background-color: green;
     padding: 20px;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.hero_right {
-    background-color: rgb(87, 10, 48);
-    padding:60px;
-    justify-content: center;
+.hero h1 {
+    font-size: 3.5em;
+}
+
+.unsubscribe {
+    justify-content: flex-start;
+
+}
+input {
     padding: 20px;
+    background-color: white;
+    border-radius:15px;
+    border: none;
+
+}
+.hero_right {
+    padding: 60px;
+    justify-content: center;
+    position: relative;
 }
 
 .hero_img {
     width: 400px;
     height:400px;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
 }
 
+.pink_img {
+    width: 425px;
+    height:425px;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-40deg);
+    background-color: transparent;
+}
+
+.purple_img {
+    width: 425px;
+    height:425px;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(-25deg);
+    background-color: transparent;
+}
+
+.blue_img {
+    width: 425px;
+    height:425px;
+    position: absolute;
+    transform: rotate(-50deg);
+    z-index: 1; background-color: transparent;
+}
+
+.enter_email {
+    justify-content: space-around;
+}
 /* main end */
 
 /* footer start */
 footer {
-    background-color: yellow;
     min-height: 100px;
     padding: 0px 70px;
 }
@@ -110,7 +176,10 @@ footer {
     padding: 20px;
 }
 
-help {
+.help a {
+    font-weight: bolder;
+}
+.help {
     padding: 20px;
 }
 /* footer end */
