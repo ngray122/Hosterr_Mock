@@ -9,6 +9,6 @@ function joinList() {
 
 }
 
- function unsubscribeLink() {
-     alert("Are you sure? So sad to see you go! 😢  To confirm, press ok")
- }
+function unsubscribeLink() {
+    alert("Are you sure? So sad to see you go! 😢  To confirm, press ok")
+}
